@@ -729,11 +729,3 @@ Not just `network.target` which is when network management starts, not when it's
 3. `systemctl list-units --state=failed --since="1 hour ago"`
 4. Add `TimeoutStartSec=300` to [Service] section
 5. Type=simple with RemainAfterExit=yes is contradictory. Use Type=oneshot instead.
-
----
-
-**Next Level:** Want to dive into:
-1. **Systemd timers vs cron** - which is better and when?
-2. **Socket activation** - services that start on demand?
-3. **Resource limiting with cgroups** via systemd?
-4. **Troubleshooting boot problems** before systemd starts?
